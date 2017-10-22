@@ -13,7 +13,7 @@ import org.springframework.stereotype.Component;
  */
 @Target({ElementType.TYPE})
 @Retention(RetentionPolicy.RUNTIME)
-@Component
+@Component  //有RpcService注解的一定是Component
 public @interface RpcService {
     Class<?> value();
 }
